@@ -83,7 +83,9 @@ const Country = ({ country }: { country: DataCountry }) => {
 
           <div className='detail-rows'>
             <h4>Currency</h4>
-            <p>{country.currencies.map(({ name }) => name).join(', ')}</p>
+            <p>
+              {country.currencies?.map(({ name }) => name).join(', ') ?? 'N/A'}
+            </p>
           </div>
 
           <div className='detail-rows'>
