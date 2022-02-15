@@ -16,20 +16,22 @@ const getCountry = async (id: string) => {
 const Country = ({ country }: { country: DataCountry }) => {
   const [borders, setBorders] = useState<DataCountry[]>();
 
-  const getBorders = async () => {
-    if (country.borders !== undefined) {
-      const dataBorders = await Promise.all(
-        country.borders.map((border) => getCountry(border))
-      );
-
-      setBorders(dataBorders);
-    }
-  };
+  // const isBordersExist = country?.borders?.map((border) => border);
+  // console.log(isBordersExist);
 
   useEffect(() => {
+    const getBorders = async () => {
+      if (country.borders !== undefined) {
+        const dataBorders = await Promise.all(
+          country.borders.map((border) => getCountry(border))
+        );
+
+        setBorders(dataBorders);
+      }
+    };
+
     getBorders();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [country]);
 
   return (
     <>
