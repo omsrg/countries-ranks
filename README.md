@@ -1,22 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Country Ranks
+
+![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154020451-0ba16865-3cfc-459e-955f-26ec13df5ca8.png)
+
+![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154020678-c2150fa2-3005-493a-ae47-410f083b709b.png)
+
+Country Ranks build with React, Nextjs and [restcountries API](https://restcountries.com/)
+
+[Demo Website](https://countries-ranks.vercel.app/)
+
+## Built With
+
+- NextJS
+- Typescript
+- TailwindCSS
 
 ## Getting Started
 
-First, run the development server:
+**1. To get started, first install all the necessary dependencies.**
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+$ yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**2. Start the development server**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+$ yarn dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open http://localhost:3000/ with your browser to see the result.
 
 ## Learn More
 
