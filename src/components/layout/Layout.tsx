@@ -4,7 +4,7 @@ import UnstyledLink from '@/components/links/UnstyledLink';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className='grid h-screen grid-rows-layout'>
+    <div className='grid min-h-screen grid-rows-layout'>
       <header className='my-8 flex items-center justify-center '>
         <UnstyledLink href='/'>
           <svg
@@ -35,7 +35,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </UnstyledLink>
       </header>
       <main>{children}</main>
-      <footer className='mt-8 text-center text-xs'>Ompi</footer>
+      <footer className='my-16  text-center text-xs'>
+        © {new Date().getFullYear()} Ompi.
+      </footer>
     </div>
   );
 }
