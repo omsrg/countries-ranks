@@ -22,8 +22,6 @@ const Country = ({ country }: { country: DataCountry }) => {
 
       setBorders(dataBorders);
     }
-
-    setBorders(undefined);
   };
 
   useEffect(() => {
@@ -32,7 +30,7 @@ const Country = ({ country }: { country: DataCountry }) => {
   }, []);
 
   return (
-    <div className='layout mt-8 grid md:grid-cols-2 md:gap-4 lg:gap-8'>
+    <div className='layout my-8 grid md:grid-cols-2 md:gap-4 lg:gap-8'>
       <div className='left'>
         <div className='flex flex-col items-center rounded-md bg-bgColorLight p-5 shadow-md'>
           <div className='flex justify-center'></div>
