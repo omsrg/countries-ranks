@@ -21,21 +21,21 @@ const HomePage = ({ countries }: { countries: DataCountry[] }) => {
     setKeyword(e.target.value);
   };
   return (
-    <section className='layout'>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
-
-      <div className='w-full'>
-        <p className='my-3 text-base text-textColorSec'>
-          Found {countries.length} countries
-        </p>
-        <SearchInput
-          placeholder='Filter by Name, Region or Subregion'
-          onChange={onInputChange}
-        />
-      </div>
-      <CountriesTable countries={filteredCountries} />
-    </section>
+    <>
+      <Seo templateTitle='Home' />
+      <section className='layout'>
+        <div className='w-full'>
+          <p className='my-3 text-base text-textColorSec'>
+            Found {countries.length} countries
+          </p>
+          <SearchInput
+            placeholder='Filter by Name, Region or Subregion'
+            onChange={onInputChange}
+          />
+        </div>
+        <CountriesTable countries={filteredCountries} />
+      </section>
+    </>
   );
 };
 
