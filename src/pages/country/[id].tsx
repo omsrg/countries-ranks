@@ -16,9 +16,6 @@ const getCountry = async (id: string) => {
 const Country = ({ country }: { country: DataCountry }) => {
   const [borders, setBorders] = useState<DataCountry[]>();
 
-  // const isBordersExist = country?.borders?.map((border) => border);
-  // console.log(isBordersExist);
-
   useEffect(() => {
     const getBorders = async () => {
       if (country.borders !== undefined) {
@@ -90,9 +87,13 @@ const Country = ({ country }: { country: DataCountry }) => {
 
             <div className='detail-rows'>
               <h4>Currency</h4>
+
               <p>
                 {country.currencies?.map(({ name }) => name).join(', ') ??
                   'N/A'}
+                {/* {country.currencies?.map((curr, idx) => (
+                  <span key={idx}>{curr.name}</span>
+                ))} */}
               </p>
             </div>
 
@@ -106,14 +107,17 @@ const Country = ({ country }: { country: DataCountry }) => {
               <p>{country.gini || '0'} %</p>
             </div>
 
-            <div className='p-5'>
+            <div className='sm:p-5'>
               <h4 className='mb-5 text-textColorSec'>Neighbouring Countries</h4>
 
-              <div className='grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-4'>
+              <div className='flex flex-wrap justify-center gap-6'>
                 {borders?.map(({ flag, name }) => (
-                  <div key={flag} className='panel country border'>
-                    <Image src={flag} width={100} height={100} alt={name} />
-                    <h4>{name}</h4>
+                  <div
+                    key={flag}
+                    className=' flex w-32 flex-col justify-center border p-2 shadow-sm'
+                  >
+                    <Image src={flag} width={100} height={80} alt={name} />
+                    <h4 className='text-center'>{name}</h4>
                   </div>
                 )) ?? '--'}
               </div>

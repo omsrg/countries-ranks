@@ -71,9 +71,13 @@
 
 @layer components {
   .detail-rows {
-    @apply flex justify-between border-b border-[#e0e0e0] p-5;
+    @apply flex justify-between border-b border-[#e0e0e0] py-5 sm:px-5;
   }
   .detail-rows h4 {
     @apply text-textColorSec;
+  }
+
+  .detail-rows p {
+    @apply text-right;
   }
 }
