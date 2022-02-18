@@ -1,8 +1,8 @@
 # Country Ranks
 
-![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154020451-0ba16865-3cfc-459e-955f-26ec13df5ca8.png)
+![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154493216-9459b435-4f71-47fe-a4a3-fcf57e6ae70f.png)
 
-![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154020678-c2150fa2-3005-493a-ae47-410f083b709b.png)
+![Country Ranks Screenshot](https://user-images.githubusercontent.com/72729349/154493341-33f09e27-44d5-487d-8425-fd3e833b8417.png)
 
 Country Ranks build with React, Nextjs and [restcountries API](https://restcountries.com/)
 
