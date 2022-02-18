@@ -19,13 +19,12 @@ module.exports = {
         primary: ['Inter', ...fontFamily.sans],
       },
       colors: {
-        // Customize it on globals.css :root
         primaryColor: '#21b6b7',
-        textColor: '#124a63',
+        textColor: '#f0f0f0',
         textColorSec: '#b3c5cd',
-        bgColor: '#f9f9f9',
-        bgColorDark: '#eef3f6',
-        bgColorLight: '#ffffff',
+        bgColor: '#252329',
+        bgColorDark: '#3c393f',
+        bgColorLight: '#120f13',
         dark: '#222222',
       },
       gridTemplateRows: {

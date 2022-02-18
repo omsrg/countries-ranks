@@ -67,7 +67,7 @@ const Country = ({ country }: { country: DataCountry }) => {
         </div>
 
         <div className='right'>
-          <div className='bg-bgColorLight p-5 shadow-md'>
+          <div className='rounded-md bg-bgColorLight p-5 shadow-md'>
             <h3 className='pb-0 sm:p-5 '>Details</h3>
 
             <div className='detail-rows'>
