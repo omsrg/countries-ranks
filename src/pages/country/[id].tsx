@@ -136,7 +136,7 @@ export const getStaticPaths = async () => {
   const countries: DataCountry[] = await res.json();
 
   const paths = countries.map((country: DataCountry) => ({
-    params: { id: country.alpha3Code },
+    params: { id: country.alpha3Code.toString() },
   }));
 
   return {
